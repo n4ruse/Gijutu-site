@@ -1,0 +1,202 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #fff;
+  margin: 0;
+}
+/* All-contents setting */
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:link {
+  color: #3e3e3e;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3e3e3e;
+}
+
+/* header */
+
+.header {
+  height: 105px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  /* 以下header上部固定・透明化
+            おそらく別方法の方が良いと予想される為コメントアウト
+            (決して余白設定等が面倒くさいわけではない) */
+  /* position: fixed;
+            top: 0px; */
+}
+
+.header h1 {
+  padding: 0 0 0 20px;
+  font-size: 30px;
+  color: #3e3e3e;
+  display: inline-block;
+}
+/* navigation setting */
+
+.header_nav {
+  margin-left: auto;
+}
+
+.header_nav ul {
+  display: flex;
+}
+
+.header_nav ul li {
+  padding: 0 40px;
+}
+
+.header_nav a:hover {
+  color: rgb(166, 207, 255);
+}
+/* contents setting */
+
+.contents {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contents img {
+  width: 100%;
+}
+
+.contents small {
+  font-size: 14px;
+  font-weight: 50;
+}
+
+/* .contents ul {
+  padding: 10%;
+} */
+
+/* Tips setting */
+
+.tips_info {
+  max-width: 80%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tips_info p {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.Tips_contents h2 {
+  /* padding-left: 0%; */
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-shadow: 6px 6px 3px #a8a8a8;
+  color: #1d1d1d;
+}
+
+.Tips_contents p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  letter-spacing: 4px;
+  line-height: 25px;
+}
+
+.Tips_contents li {
+  list-style-type: circle;
+}
+
+.Tips_contents s {
+  font-size: 9px;
+}
+
+.Tips_contents strong {
+  border-bottom: 0.5px solid black;
+  font-size: 35px;
+  line-height: 200px;
+  letter-spacing: 10px;
+}
+/* About_contents setting */
+.About_contents {
+  margin: 100px 0 100px 0;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.About_contents p {
+  letter-spacing: 4px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+
+.About_contents li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.About_contents li:before {
+  content: "";
+  position: absolute;
+  top: 0.45em;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #4ee4e9;
+  border-right: 2px solid #4ee4e9;
+}
+
+.About_contents a {
+  font-size: 18px;
+  border-bottom: 1px solid;
+}
+
+.About_contents a:hover {
+  color: rgb(166, 207, 255);
+}
+
+.About_contents strong {
+  border-bottom: 1px solid #3e3e3e;
+}
+
+/* footer setting */
+.footer {
+  max-width: 100%;
+  height: 150px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer_nav ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 0;
+}
+
+.footer_nav ul li {
+  padding: 40px;
+  line-height: 0;
+}
+
+.footer_nav a:hover {
+  color: rgb(166, 207, 255) 7b;
+}
